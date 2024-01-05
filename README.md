@@ -24,6 +24,6 @@ Leaning JavaScript DOM Full Course
 <ul>
     <li>1st --> getElementById() Method</li>
     <li>2nd --> getElementByName() Method</li>
-    <li></li>
-    <li></li>
+    <li>3rd --> getElementByTagName() Method</li>
+    <li>4th --> getElementByClassName() Method</li>
 </ul>
