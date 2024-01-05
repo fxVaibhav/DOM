@@ -19,3 +19,11 @@ Leaning JavaScript DOM Full Course
     <li>any node has relationship to other nodes in the dom tree , and it is same as described in the traditional family tree.</li>
     <li>for ex. ---> body -> this node is the child node of the html and html is the parent node of body.</li>
 </ul>
+
+<h1>Selecting Elements using DOM</h1>
+<ul>
+    <li>1st --> getElementById() Method</li>
+    <li>2nd --> getElementByName() Method</li>
+    <li></li>
+    <li></li>
+</ul>
