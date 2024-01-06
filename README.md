@@ -26,4 +26,17 @@ Leaning JavaScript DOM Full Course
     <li>2nd --> getElementByName() Method</li>
     <li>3rd --> getElementByTagName() Method</li>
     <li>4th --> getElementByClassName() Method</li>
+<<<<<<< HEAD
+=======
+    <li>5th --> querySelector() Method</li>
+    <li>6th --> querySelectorAll() Method</li>
+</ul>
+
+<h1>Traversing Element</h1>
+<ul>
+    <li>selecting parent element</li>
+    <li>selecting child element</li>
+    <li>selecting sibling ls
+    element</li>
+>>>>>>> e168d75af253aeacd2097bd7f07fa562e01c91b4
 </ul>
