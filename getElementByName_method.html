@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div>
+        <input type="text" name="language" value="JS">
+        <input type="text" name="language" value="Python">
+        <input type="text" name="language" value="C++">
+    </div>
+    <script>
+        // this method return's node list 
+        let lang = document.getElementsByName("language");
+        console.log(lang);
+    </script>
+</body>
+</html>

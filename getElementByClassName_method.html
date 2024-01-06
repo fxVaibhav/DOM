@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div>
+        <h1 class="heading first">first heading</h1>
+        <h1 class="heading second">second heading</h1>
+        <div id="container">
+            <h1 class="heading third">third heading</h1>
+            <h1 class="heading fourth">fourth heading</h1>
+        </div>
+    </div>
+    <script>
+        let cont = document.getElementById("container");
+        // console.log(cont);
+        let msg = cont.getElementsByClassName("heading");
+        // let msg = document.getElementsByClassName("heading");
+        console.log(msg);
+    </script>
+</body>
+
+</html>
