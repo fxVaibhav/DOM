@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div>
+        <!-- selection element by getElementById() method -->
+        <p id="message">JavaScript DOM</p>
+        <p id="message">JavaScript</p>
+        <p id="message">This is JavaScript DOM Full Course</p>
+    </div>
+    <script>
+        let msg = document.getElementById("message");
+        console.log(msg); //in this msg we stored this element -> '<p id="message">JavaScript DOM</p>';
+        // NOTE -> if we have multiple elements with the same id then it returns first 1st element...
+        // because id has unique in the html elements.
+    </script>
+</body>
+</html>

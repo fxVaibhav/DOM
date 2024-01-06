@@ -29,11 +29,3 @@ Leaning JavaScript DOM Full Course
     <li>5th --> querySelector() Method</li>
     <li>6th --> querySelectorAll() Method</li>
 </ul>
-
-<h1>Traversing Element</h1>
-<ul>
-    <li>selecting parent element</li>
-    <li>selecting child element</li>
-    <li>selecting sibling ls
-    element</li>
-</ul>
