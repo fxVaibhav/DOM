@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+  background-color: black;
+  color: white;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.note{
+    cursor: none;
+}
+
+.add{
+    cursor: pointer;
+}
+
+.this-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
