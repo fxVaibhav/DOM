@@ -1,28 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Note's</title>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <header class="nav-bar">
-        <h1 class="note">Note's</h1>
-        <h1 class="add" onclick="myFunction()">Add +</h1>
-    </header>
+    <div class="conatiner">
+        <div class="items">
+            <div class="items-parts">
+                <i class="fa-solid fa-map-pin" style="font-size: 3rem; padding-top: 1rem;"></i>
+                <h3>OUR MAIN OFFICE</h3>
+                <p>SP6, Phase IV, Sitapura Industrial Area, EPIP Sitapura, Jaipur, Rajasthan 302022</p>
+            </div>
+            <div class="items-parts">
+                <i class="fa-solid fa-phone" style="font-size: 3rem; padding-top: 1rem;"></i>
+                <h3>PHONE NUMBER</h3>
+                <p>84218652184</p>
+                <p>48541826548(Toll Free)</p>
+            </div>
+            <div class="items-parts">
+                <i class="fa-solid fa-fax" style="font-size: 3rem; padding-top: 1rem;"></i>
+                <h3>FAX</h3>
+                <p>154-48541-48525</p>
+            </div>
+            <div class="items-parts">
+                <i class="fa-solid fa-envelope" style="font-size: 3rem; padding-top: 1rem;"></i>
+                <h3>MAIL</h3>
+                <a href="mailto: " style="color: black;">metacube@gmail.com</a>
+            </div>
+        </div>
 
-    <!-- <div class="this-div">
-        <textarea class="writing-area" cols="30" rows="10" placeholder="Click Here"></textarea>
-    </div> -->
-
-    <div class="map">
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43035258.518169664!2d-135.5378995672093!3d48.8264772057962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2sin!4v1704963453649!5m2!1sen!2sin" width="100%" height="645px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <div class="contact-form">
+            <div class="one two" style="color: black;">
+                <h1>Contact info</h1>
+                <div class="input-box">
+                    <form action="">
+                        <label for="email" style="display: block;"><b>Email</b></label>
+                        <input type="email" name="" id="email" placeholder="Enter a valid email address"
+                            style="line-height: 25px; width: 92.5%; margin-bottom: 0.5rem;">
+                        <label for="name"><b>Name</b></label>
+                        <input type="text" id="name" placeholder="Enter your Name" style="line-height: 25px; width: 92.5%;  margin-bottom: 0.5rem;">
+                        <label for="mess" style="display: block;"><b>Message</b></label>
+                        <textarea placeholder="Enter your message..." id="mess" cols="60" rows="10" style=" margin-bottom: 0.5rem;"></textarea>
+                        <button style="width: 93.5%; line-height: 2.5rem;">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="one">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113963.08966416422!2d75.65549640334103!3d26.797091905070587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc998fcb5acdd%3A0x30833228e937839!2sMetacube%20Software%20(M1%20office)!5e0!3m2!1sen!2sin!4v1704968671429!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </div>
-    
-    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43035258.518169664!2d-135.5378995672093!3d48.8264772057962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2sin!4v1704963453649!5m2!1sen!2sin" width="100%" height="645px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 
     <script src="script.js"></script>
 </body>
+
 </html>
