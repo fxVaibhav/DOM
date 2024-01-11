@@ -24,3 +24,8 @@ body{
     justify-content: space-between;
     padding: 1rem;
 }
+
+.writing-area{
+    margin: 1rem;
+    margin-bottom: 0px;
+}
