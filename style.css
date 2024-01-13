@@ -5,14 +5,15 @@ body {
 
 .container {
   height: 15vh;
-  /* border: 2px solid black; */
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 3rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: lightgreen;
+  background-color: rgb(0, 255, 0);
+  /* border: 2px solid black; */
+  /* background-color: lightgreen; */
+  /* justify-content: space-between; */
 }
 
 /* .nav-items{
@@ -43,13 +44,18 @@ body {
 
 .new-menu-by-menu-button ul li {
   height: 40px;
-  /* border: 2px solid black; */
   padding-top: 1.5rem;
+  background-color: rgba(0, 255, 0, 0.3);
+  border-top: 1px solid black;
   /* padding-left: 2rem; */
 }
 
 .new-menu-by-menu-button ul li:hover {
-  background-color: grey;
+  background-color: white;
+}
+
+.new-menu-by-menu-button ul li:hover a {
+  text-decoration-line: underline;
 }
 
 .new-menu-by-menu-button ul li a {
@@ -87,7 +93,7 @@ body {
 }
 
 #menu-button:checked ~ .new-menu-by-menu-button {
-  @media (min-width:900px) {
+  @media (min-width: 900px) {
     display: none;
   }
 }
@@ -96,4 +102,35 @@ body {
   .new-menu-by-menu-button {
     display: none;
   }
+}
+
+.aboutcontainer{
+    display: flex;
+    justify-content: end;
+}
+
+.about-us{
+    position: absolute;
+    right: 4rem;
+    border: 2px solid black;
+    padding: 0;
+    width: 300px;
+    display: none;
+}
+
+.about:hover .about-us{
+    display: flex;
+}
+
+.about-us ul{
+    padding: 0;
+    list-style: none;
+}
+
+.about-us ul li{
+    padding: 1rem 1rem 1rem 0;
+}
+
+.about-us ul li a{
+    text-decoration: none;
 }

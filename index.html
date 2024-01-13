@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <input type="checkbox" id="menu-button" style="display: none;">
     <div class="container">
         <div class="nav-items" style="flex-grow: 1; display: flex; flex-shrink: 2;">
@@ -20,21 +20,39 @@
         </div>
         <div class="nav-items p">Home</div>
         <div class="nav-items p">Blog</div>
-        <div class="nav-items p">About-us</div>
+        <div class="nav-items p about">About-us</div>
         <div class="nav-items p">Contact-us</div>
         <div class="nav-items p">FAQ</div>
         <div class="nav-items menu"><label for="menu-button"><i class="fa-solid fa-bars"></i></label></div>
 
     </div>
+
+    <div class="aboutcontainer">
+        <div class="about-us">
+            <ul>
+                <li><a href="#">Our Purpose</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Work</a></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="new-menu-by-menu-button">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">About-us</a></li>
             <li><a href="#">Contact-us</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li style="border-bottom: 1px solid black;"><a href="#">FAQ</a></li>
         </ul>
     </div>
+
+    <script>
+        document.addEventListener("contextmenu",function(e){
+            e.preventDefault()
+        },false)
+    </script>
+
 </body>
 
 </html>
