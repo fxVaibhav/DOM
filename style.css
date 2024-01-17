@@ -18,11 +18,12 @@
   background-color: #f70776;
   position: absolute;
   /* position: fixed; */
-  bottom: 0;
+  /* bottom: 0; */
   width: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 250px 25px;
+  z-index: 10;
 }
 
 @media (max-width: 755px) {
@@ -89,4 +90,119 @@
 
 .item-5 > i {
   margin-right: 0.5rem;
+}
+
+.container {
+  /* position: fixed; */
+  /* top: 0; */
+  color: white;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  z-index: 100;
+  /* background-color: rgb(0, 255, 0); */
+  /* background: #f70776; */
+  background: #c3195d;
+
+  /* border: 2px solid black; */
+  /* background-color: lightgreen; */
+  /* justify-content: space-between; */
+}
+
+/* .nav-items{
+      border: 2px solid black;
+  } */
+
+.nav-items h1 span {
+  color: #680747;
+}
+
+.p:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.p {
+  padding: 1rem;
+}
+
+.new-menu-by-menu-button ul {
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.new-menu-by-menu-button ul li {
+  height: 40px;
+  padding-top: 1.5rem;
+  /* background-color: rgba(0, 255, 0, 0.3); */
+
+  /* background-color: #c3195d; */
+  background-color: #f70776;
+  border-top: 1px solid black;
+  /* padding-left: 2rem; */
+}
+
+.new-menu-by-menu-button ul li:hover {
+  background-color: white;
+}
+
+.new-menu-by-menu-button ul li:hover a {
+  text-decoration-line: underline;
+  color: black;
+}
+
+.new-menu-by-menu-button ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .nav-items {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: flex;
+    /* z-index: 1000; */
+  }
+}
+
+@media (min-width: 900px) {
+  .menu {
+    display: none;
+  }
+}
+
+.new-menu-by-menu-button {
+  display: none;
+}
+
+#menu-button:checked ~ .new-menu-by-menu-button {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  top: 0px;
+}
+
+#menu-button:checked ~ .new-menu-by-menu-button {
+  @media (min-width: 900px) {
+    display: none;
+    z-index: 1000;
+  }
+}
+
+@media (min-width: 900px) {
+  .new-menu-by-menu-button {
+    display: none;
+  }
 }
