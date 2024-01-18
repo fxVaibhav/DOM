@@ -1,208 +1,48 @@
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.img-container{
+    padding: 2rem;
 }
 
-/* footer {
-  position: absolute;
-  bottom: 0px;
-  align-items: flex-end;
-} */
-
-.footer {
-  background-color: #f70776;
-  position: absolute;
-  /* position: fixed; */
-  /* bottom: 0; */
-  width: 100%;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 250px 25px;
-  z-index: 10;
+.slide-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
 }
 
-@media (max-width: 755px) {
-  .footer {
-    /* background-color: black; */
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 250px 250px 25px;
-  }
-
-  .item-3 {
-    grid-row: 2/3;
-    grid-column: 1/2;
-  }
-
-  .item-4 {
-    grid-row: 2/3;
-    grid-column: 2/3;
-  }
-}
-
-@media (max-width: 375px) {
-  .footer {
-    /* grid-template-columns: 50% 50%; */
-    grid-template-rows: 275px 275px 25px;
-  }
-}
-
-.item {
-  /* border: 1px solid black; */
-  padding: 1rem;
-  padding-top: 1.5rem;
-  padding-bottom: 0;
-  /* bottom: 0; */
-  /* height: 100px; */
-  /* width: 100px; */
-}
-
-.item a:hover {
-  opacity: 0.75;
-}
-
-.item > h3 {
-  margin-bottom: 1rem;
-}
-
-.item > ul > li {
-  margin: 0.5rem;
-}
-
-.item-3 > ul > li > a > i {
-  margin-right: 0.5rem;
-}
-
-.item-4 > ul > li {
-  margin: 0;
-  margin-bottom: 0.25rem;
-}
-
-.item-5 {
-  padding: 0;
-  grid-column: 1/5;
-  background-color: #c3195d;
-}
-
-.item-5 > i {
-  margin-right: 0.5rem;
-}
-
-.container {
-  /* position: fixed; */
-  /* top: 0; */
-  color: white;
-  height: 15vh;
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  z-index: 100;
-  /* background-color: rgb(0, 255, 0); */
-  /* background: #f70776; */
-  background: #c3195d;
-
-  /* border: 2px solid black; */
-  /* background-color: lightgreen; */
-  /* justify-content: space-between; */
-}
-
-/* .nav-items{
-      border: 2px solid black;
-  } */
-
-.nav-items h1 span {
-  color: #680747;
-}
-
-.p:hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
-}
-
-.p {
-  padding: 1rem;
-}
-
-.new-menu-by-menu-button ul {
-  margin: 0px;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.new-menu-by-menu-button ul li {
-  height: 40px;
-  padding-top: 1.5rem;
-  /* background-color: rgba(0, 255, 0, 0.3); */
-
-  /* background-color: #c3195d; */
-  background-color: #f70776;
-  border-top: 1px solid black;
-  /* padding-left: 2rem; */
-}
-
-.new-menu-by-menu-button ul li:hover {
-  background-color: white;
-}
-
-.new-menu-by-menu-button ul li:hover a {
-  text-decoration-line: underline;
-  color: black;
-}
-
-.new-menu-by-menu-button ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-@media (max-width: 900px) {
-  .nav-items {
-    display: none;
-  }
-}
-
-@media (max-width: 900px) {
-  .menu {
+.slider{
     display: flex;
-    /* z-index: 1000; */
-  }
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
 }
 
-@media (min-width: 900px) {
-  .menu {
-    display: none;
-  }
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
 }
 
-.new-menu-by-menu-button {
-  display: none;
+.slider-nav{
+    display: flex;
+    position: absolute;
+    column-gap: 1rem;
+    z-index: 1;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
-#menu-button:checked ~ .new-menu-by-menu-button {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  top: 0px;
+.slider-nav a{
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: white;
+    opacity: 0.50;
+    border-radius: 50%;
+    transition: opacity ease 250ms;
 }
 
-#menu-button:checked ~ .new-menu-by-menu-button {
-  @media (min-width: 900px) {
-    display: none;
-    z-index: 1000;
-  }
-}
-
-@media (min-width: 900px) {
-  .new-menu-by-menu-button {
-    display: none;
-  }
+.slider-nav a:hover{
+    opacity: 1;
 }
