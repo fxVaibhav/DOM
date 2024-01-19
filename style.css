@@ -146,14 +146,15 @@ footer {
 .m-list ul li {
   /* width: 100vw; */
   padding: 1rem;
-  margin: 3rem 0;
+  margin: 1rem 0;
 }
-/* 
+
+
 #menu-button-list:checked ~ .header-container {
   background-color: #680747;
   background-color: #c3195d;
-  transition: ease-in 1000ms;
-} */
+  transition: ease-in 100ms;
+}
 
 #menu-button-list:checked ~ .m-list {
   position: absolute;
@@ -166,6 +167,9 @@ footer {
   height: auto;
   width: 100vw;
   box-shadow: 0 0.5rem 1rem #f70776;
+  z-index: 100;
+  background-color: #f70776;
+
 }
 
 .m-list ul li a i {
@@ -260,4 +264,66 @@ footer {
 
 .item-5 > i {
   margin-right: 0.5rem;
+}
+
+.img-container {
+  padding: 2rem;
+  /* display: none; */
+}
+
+.slide-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+@media (max-width : 426px) {
+    .slide-wrapper{
+        max-width: 22.5rem;
+    }
+}
+
+@media (max-width : 376px) {
+    .slide-wrapper{
+        max-width: 19rem;
+    }
+}
+
+@media (max-width : 321px) {
+    .slide-wrapper{
+        max-width: 16rem;
+    }
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav a {
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 50%;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
 }
