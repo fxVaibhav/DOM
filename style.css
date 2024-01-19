@@ -188,7 +188,7 @@ footer {
   position: absolute;
   /* position: fixed; */
   /* bottom: 0; */
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 250px 25px;
