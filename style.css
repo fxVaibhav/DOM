@@ -35,12 +35,12 @@ article {
   background-color: #680747;
 }
 
-footer {
+/* footer { */
   /* background: grey; */
   /* background-color: #141010; */
   /* grid-row: 3/4; */
   /* grid-column: 1/4; */
-}
+/* } */
 
 @media (max-width: 769px) {
   body {
