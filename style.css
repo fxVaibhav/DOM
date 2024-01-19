@@ -221,6 +221,12 @@ footer {
   }
 }
 
+@media (max-width : 321px) {
+    .footer{
+        width: 100vw;
+    }
+}
+
 .item {
   /* border: 1px solid black; */
   padding: 1rem;
