@@ -279,19 +279,19 @@ footer {
 
 @media (max-width : 426px) {
     .slide-wrapper{
-        max-width: 21rem;
+        max-width: 20rem;
     }
 }
 
 @media (max-width : 376px) {
     .slide-wrapper{
-        max-width: 18rem;
+        max-width: 17rem;
     }
 }
 
 @media (max-width : 321px) {
     .slide-wrapper{
-        max-width: 15rem;
+        max-width: 14rem;
     }
 }
 
