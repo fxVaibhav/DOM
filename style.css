@@ -36,10 +36,10 @@ article {
 }
 
 footer {
-  background: grey;
+  /* background: grey; */
   /* background-color: #141010; */
-  grid-row: 3/4;
-  grid-column: 1/4;
+  /* grid-row: 3/4; */
+  /* grid-column: 1/4; */
 }
 
 @media (max-width: 769px) {
@@ -298,7 +298,7 @@ footer {
 
 @media (max-width : 321px) {
     .slide-wrapper{
-        max-width: 16rem;
+        max-width: 12.5rem;
     }
 }
 
