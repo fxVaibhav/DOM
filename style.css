@@ -164,6 +164,7 @@ footer {
   /* background: black; */
   height: auto;
   width: 100vw;
+  box-shadow: 0 0.5rem 1rem #f70776;
 }
 
 .m-list ul li a i {
@@ -174,4 +175,88 @@ footer {
   #menu-button-list:checked ~ .m-list {
     display: none;
   }
+}
+
+.footer {
+  text-align: center;
+  background-color: #f70776;
+  position: absolute;
+  /* position: fixed; */
+  /* bottom: 0; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 250px 25px;
+}
+
+@media (max-width: 755px) {
+  .footer {
+    /* text-align: center; */
+    /* background-color: black; */
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 250px 25px;
+  }
+
+  .item-3 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .item-4 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    /* grid-template-columns: 50% 50%; */
+    grid-template-rows: 275px 275px 25px;
+  }
+}
+
+.item {
+  /* border: 1px solid black; */
+  padding: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+  /* bottom: 0; */
+  /* height: 100px; */
+  /* width: 100px; */
+}
+
+.item a:hover {
+  opacity: 0.75;
+}
+
+.item > h3 {
+  margin-bottom: 1rem;
+}
+
+.item > ul {
+  padding: 0;
+}
+
+.item > ul > li {
+  margin: 0.5rem;
+}
+
+.item-3 > ul > li > a > i {
+  margin-right: 0.5rem;
+}
+
+.item-4 > ul > li {
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+
+.item-5 {
+  padding: 0;
+  grid-column: 1/5;
+  background-color: #c3195d;
+  background-color: #141010;
+}
+
+.item-5 > i {
+  margin-right: 0.5rem;
 }
